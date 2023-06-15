@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";  //using useSelector redux function to fetch the data
 
 function Home() {
   //store to the profile.js we are fetching the data

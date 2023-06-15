@@ -30,4 +30,3 @@ export const { setUsername, setEmail } = authslice.actions;
 //it is different from the action mentioned inside the reducer callback.
 
 export default authslice.reducer;
-//
