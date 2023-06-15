@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux"; //importing the useDispatch from react-redux
 import { setUsername, setEmail } from "../store/authslice";
 
 export function Login() {
   const [username, setusername] = useState("");
   const [email, setemail] = useState("");
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); //declaring a variable to use redux function
 
   const handleClick = () => {
-    dispatch(setUsername(username));
+    dispatch(setUsername(username));  //initiating callback for the dispatch function
     dispatch(setEmail(email));
   };
 
